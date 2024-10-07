@@ -198,56 +198,53 @@ h1, h2 {
 }
 
 /* Contact info styles */
-/* Contact section styles */
+/* Contact Form Styling */
 .contact {
-  display: flex;                    /* Use flexbox for centering */
-  justify-content: center;          /* Center items horizontally */
-  align-items: center;              /* Center items vertically */
-  flex-direction: column;           /* Stack children vertically */
-  height: 100vh;                    /* Take full height of the viewport */
-  padding: 20px;                    /* Padding around the contact section */
+  max-width: 600px; /* Set a maximum width for the form */
+  margin: 20px auto; /* Center the form */
+  padding: 20px; /* Add padding around the form */
+  background-color: #f9f9f9; /* Light background color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
 .contact h2 {
-  margin-bottom: 20px;              /* Space below the heading */
+  text-align: center; /* Center the title */
 }
 
-.contact form {
-  background-color: #ffffff;        /* White background for the form */
-  border-radius: 5px;               /* Rounded corners */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-  padding: 20px;                    /* Padding inside the form */
-  width: 300px;                     /* Set a max width for the form */
-  text-align: left;                 /* Align text to the left */
+.contact-form {
+  display: flex;
+  flex-direction: column; /* Stack the inputs vertically */
 }
 
-.contact label {
-  margin-top: 10px;                 /* Space above labels */
-  display: block;                   /* Ensure labels are block elements */
+.contact-form label {
+  margin: 10px 0 5px; /* Spacing for labels */
 }
 
-.contact input, .contact textarea {
-  width: 100%;                      /* Full width of the parent */
-  padding: 10px;                   /* Padding inside the inputs */
-  margin-top: 5px;                 /* Space above inputs */
-  border: 1px solid #ddd;          /* Light border */
-  border-radius: 5px;              /* Rounded corners */
+.contact-form input,
+.contact-form textarea {
+  padding: 10px; /* Add padding inside input fields */
+  font-size: 16px; /* Increase font size */
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 5px; /* Rounded corners for inputs */
+  width: 100%; /* Full width */
 }
 
-.contact button {
-  margin-top: 15px;                /* Space above the button */
-  background-color: #7a3b3b;       /* Dark wine color */
-  color: white;                     /* White text */
-  border: none;                     /* No border */
-  padding: 10px;                   /* Padding for the button */
-  border-radius: 5px;              /* Rounded corners */
-  cursor: pointer;                  /* Pointer cursor */
-  transition: background-color 0.3s ease; /* Smooth transition */
+.contact-form button {
+  margin-top: 10px; /* Space above the button */
+  padding: 10px; /* Padding inside the button */
+  font-size: 16px; /* Font size */
+  color: white; /* Text color */
+  background-color: #333; /* Button background color */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners for button */
+  cursor: pointer; /* Pointer cursor on hover */
 }
 
-.contact button:hover {
-  background-color: #b04a4a;       /* Lighter color on hover */
+.contact-form button:hover {
+  background-color: #ffcc00; /* Button hover color */
 }
+
 
 
 /* Team member styles */
@@ -344,3 +341,41 @@ h1, h2 {
 .call-button:hover {
   background-color: #b04a4a; /* Lighter color on hover */
 }
+
+/* Menu container styling */
+.menu {
+  list-style: none;
+  display: flex; /* To make the menu items appear in a row */
+  justify-content: space-around; /* Spacing between items */
+  padding: 0;
+}
+
+/* Menu item styling */
+/* Menu Styling */
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  background-color: #333; /* Dark background */
+}
+
+.menu li {
+  margin: 0 15px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white; 
+  font-size: 18px;
+  padding: 10px 15px;
+  transition: background-color 0.3s, color 0.3s; 
+}
+
+.menu li a:hover {
+  background-color: #ffcc00; /* Background on hover */
+  color: #333; /* Text color on hover */
+  border-radius: 5px; 
+}
+
