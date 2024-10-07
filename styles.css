@@ -268,10 +268,13 @@ h1, h2 {
 }
 
 .team-member img {
-  width: 100%;
-  height: auto; /* Keep the aspect ratio */
-  border-radius: 50%; /* Make images circular */
+  width: 150px; /* Set the desired width */
+  height: 150px; /* Set the desired height */
+  object-fit: cover; /* Ensures the image covers the area without stretching */
+  border-radius: 50%; /* Optional: makes the images circular */
+  margin-bottom: 10px; /* Space between the image and text */
 }
+
 
 /* Footer styles */
 .footer {
@@ -352,30 +355,28 @@ h1, h2 {
 
 /* Menu item styling */
 /* Menu Styling */
-.menu {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
-  background-color: #333; /* Dark background */
+.menu {list-style: none;
+display: flex;
+justify-content: center;
+padding: 0;
+margin: 0;
+background-color: #333; /* Dark background */
 }
 
 .menu li {
-  margin: 0 15px;
+margin: 0 80px;
 }
 
 .menu li a {
-  text-decoration: none;
-  color: white; 
-  font-size: 18px;
-  padding: 10px 15px;
-  transition: background-color 0.3s, color 0.3s; 
+text-decoration: none;
+color: white; 
+font-size: 18px;
+padding: 10px 15px;
+transition: background-color 0.3s, color 0.3s; 
 }
 
 .menu li a:hover {
-  background-color: #ffcc00; /* Background on hover */
-  color: #333; /* Text color on hover */
-  border-radius: 5px; 
+background-color: #ffcc00; /* Background on hover */
+color: #333; /* Text color on hover */
+border-radius: 5px; 
 }
-
